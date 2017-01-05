@@ -1,0 +1,283 @@
+.widget {
+    margin: 20% 0;
+    .widget-title {
+        border-bottom: 2px solid;
+        border-top: 2px solid;
+        h3 {
+            margin: 10px;
+            font-family: $widget-title-font;
+        }
+    }
+}
+.widget:nth-child(1) {
+    margin: 0;
+}
+
+
+/**
+ * Social icon group widget
+ */
+ .social-icons-group {
+    margin-top: 35px;
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        li{
+            display: inline-block;
+            margin: 0 5px;
+            a {
+                color: $primary_color;
+                display: block;
+                overflow: hidden;
+                font-size: 22px;
+                padding: 8px;
+                &:hover{
+                    color: $primary_hover_color;
+                }
+            }
+
+        }
+    }
+}
+
+/**
+ * Social icon group squire widget
+ */
+ .social-icons-group-squire{
+    margin-top: 35px;
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        li{
+            display: inline-block;
+            margin: 0 5px;
+            a {
+                color: $link-color;
+                background-color: #fff;
+                height: 25px;
+                width: 25px;
+                display: block;
+                overflow: hidden;
+                font-size: 25px;
+                padding: 10px;
+                transition: $transition;
+                &:hover{
+                    background: $primary_hover_color;
+                    color: #fff;
+                }
+            }
+         }
+     }
+ }
+
+/**
+ * Social icon group round widget
+ */
+ .social-icons-group-round{
+    margin-top: 35px;
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        li{
+            display: inline-block;
+            margin: 0 5px;
+            a {
+                color: #000;
+                background-color: #fff;
+                height: 32px;
+                width: 32px;
+                display: block;
+                overflow: hidden;
+                border-radius: 100%;
+                font-size: 32px;
+                padding: 10px;
+                border: 1px solid;
+                transition: 500ms;
+                &:hover{
+                    background-color: #000;
+                    color: #fff;
+                }
+            }
+         }
+     }
+ }
+
+
+/**
+ * White Recent Post widget
+ */
+
+.recent-post-thumb{
+    width: 30%;
+    float: left;
+}
+
+.recent-post-excerpt{
+    overflow: hidden;
+    padding-left: 10px;
+}
+.single-recent-post {
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    padding: 14px 0;
+}
+
+.single-recent-post:last-child{
+    border-bottom: none;
+}
+
+
+/**
+ * Widget search form
+ */
+
+.widget-search{}
+.widget-search input[type="text"]{
+    font-size: 25px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 60%;
+    float: left;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 300 Italic;
+}
+.widget-search input[type="submit"]{
+    border: 1px solid #000;
+    background-color: #000;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 8px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold 700;
+}
+
+
+/**
+ * widget-category 
+ */
+.widget-category {
+    li {
+        border-bottom: 1px solid #ddd;
+        padding: 9px 0;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold 700;
+        a{
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+}
+
+
+/**
+ * Gallery widget
+ */
+
+.gallery-widget{}
+.gallery-widget img {
+    height: auto;
+    width: 110px;
+}
+
+
+
+
+/**
+ * Dark contact form
+ */
+
+.cf-dark input[type="text"], .cf-dark input[type="email"], .cf-dark textarea {
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 15px 0;
+    margin: 10px 0;
+    color: #fff;
+}
+.cf-dark input[type="text"]:focus,
+.cf-dark input[type="email"]:focus,
+.cf-dark textarea:focus{
+    outline: none;
+}
+.single-contact-info {
+    margin: 6% 0;
+    overflow: hidden;
+}
+.contact-info-icon {
+    width: 10%;
+    float: left;
+}
+.contact-info-text {
+    width: 90%;
+    float: left;
+}
+
+
+
+.search-form{
+    position: relative;
+}
+.search-form input[type="text"] {
+    width: 95%;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.search-form input[type="submit"] {
+    background: url(images/search.png) no-repeat;
+    border: none;
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    height: 15px;
+    width: 15px;
+}
+.slicknav_nav a:hover {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background: #fff;
+    color: #000;
+    border-radius: 0;
+    text-decoration: none;
+}
+
+
+/**
+ * scroll up
+ */
+
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+}
+
+
+
+.widget-about-me{}
+.widget-about-me .name{
+    font-family: 'montserratblack';
+}
+.widget-about-me img{
+    width: 100%;
+    height: auto;
+}
+
+

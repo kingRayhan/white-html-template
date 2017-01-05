@@ -1,0 +1,30 @@
+/**
+ * Blog List Semi large
+ */
+.blog-list-semilarge{
+    margin: 10% 0;
+    overflow: hidden;
+    .entry-excerpt {
+        width: 56%;
+        margin: 0 2%;
+        float: left;
+        padding: 0 10% 0 0;
+        border-right: 2px dashed;
+    }
+    .entry-excerpt p{
+        margin: 0;
+    }
+}
+
+
+
+.blog-list-semilarge:nth-child(1){
+	margin-top: 0;
+}
+
+
+.blog-list-semilarge .entry-meta{
+	float: right;
+	overflow: hidden;
+}
+

@@ -1,0 +1,114 @@
+/* Responsive */
+
+
+@media all and (max-width: 778px) {
+    /* Author box */
+    .author-pic {
+        width: 100%;
+        float: none;
+    }
+    .author-pic-wraper {
+        width: 135px;
+        height: 135px;
+        margin: 0% auto 10% auto;
+        position: relative;
+    }
+    .author-text {
+        overflow: hidden;
+        padding: 15px;
+    }
+    .author-social-links ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .col-1-2,
+    .col-2-3,
+    .col-2-4,
+    .col-1-4,
+    .col-1-3{
+        width: 98%;
+        margin: 0 auto;
+    }
+
+
+.logo h2 {
+    text-align: center;
+}
+
+
+/**
+ * Blog list semi Large
+ */
+.entry-title {
+    font-size: 16px;
+}
+.blog-list-semilarge .entry-excerpt {
+    width: 100%;
+    margin: 0 2%;
+    float: none;
+    padding: 0;
+    border-right: none;
+}
+.blog-list-semilarge .entry-meta {
+    float: none;
+}
+.blog-list-semilarge .entry-meta h4 {
+    margin: 13px 0 4px 0;
+}
+.blog-list-semilarge .entry-meta li {
+    display: inline-block;
+}
+
+/**
+ * Blog list large
+ */
+
+.entry-footer {
+    border-top: 2px solid;
+    background-color: #ddd;
+    overflow: hidden;
+    text-align: center;
+}
+
+.entry-footer-left {
+    float: none;
+    padding: 10px;
+}
+
+.readmore {
+    float: none;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
+
+
+/**
+ * Blog list left thumb
+ */
+.blog-list-left-thumb .entry-title h2 {
+    margin: 0;
+    padding-left: 0;
+    font-size: 22px;
+}
+.blog-list-left-thumb .entry-feature-img {
+    float: none;
+    width: 100%;
+}
+.blog-list-left-thumb .entry-excerpt {
+    padding: 0;
+}
+
+/**
+ * Simgle page
+ */
+
+
+    
+}

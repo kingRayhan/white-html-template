@@ -1,0 +1,58 @@
+/**
+ * Blog List large
+ */
+
+.blog-list-large {
+    img{
+        max-width: 100%;
+    }
+    .author-profile-pic{
+        margin-top: -100px;
+    }
+    
+    .entry-title{
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 2*$lineheight-base;
+    }
+    .entry-date{
+        color: #464343;
+    }
+    .author-profile-pic{
+        img{
+            width: 150px;
+            height: 150px;
+            border: 3px solid;
+        }
+    }
+    .entry-excerpt {
+        padding: 30px;
+    }
+    .entry-excerpt:first-letter {
+        font-size: 2*$fontsize-base;
+        float: left;
+        font-family: $font-heading;
+        overflow: hidden;
+    }
+    .entry-footer {
+        border-top: 2px solid;
+        background-color: #ddd;
+        overflow: hidden;
+    }
+    .entry-footer-left{
+        float: left;
+        padding: 10px;
+    }
+    .readmore{
+        float: right;
+        background: #000;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .profile-pic-bottom {
+        margin-top: 12px;
+    }
+
+}
+

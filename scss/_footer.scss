@@ -1,0 +1,24 @@
+footer{
+    a{
+    	color: $footer_link_color;
+    }
+	.footer-top{
+		background-color: $footer_bg;
+		color: $footer_text_color;
+		padding: 3% 0;
+		.widget-title {
+		    margin-bottom: 25px;
+		    h1 , h2 , h3 , h4 , h5 , h6{
+		    	color: $footer_text_color;
+		    }
+		}
+	}
+	.footer-copyright{
+		a{
+		    color: #000;
+		}
+	}
+	.footer-copyright{
+		
+	}
+}

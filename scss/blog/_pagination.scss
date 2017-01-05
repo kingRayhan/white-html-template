@@ -1,0 +1,29 @@
+.pagination{
+    line-height: 4em;
+    overflow: hidden;
+    clear: both;
+    ul{
+        li{
+            a{
+                border: 1px solid #d7d7d7;
+                color: #676666;
+                font-size: 14px;
+                width: 31px;
+                height: 31px;
+                padding: 6px 10px;
+                transition: $transition;
+                &:hover{
+                    text-decoration: none;
+                    background-color: #000;
+                    color: #fff;
+                    border: 1px solid #000;
+                }
+                &.active , &:hover{
+                    border: 1px solid $primary-color;
+                    background-color: $primary-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

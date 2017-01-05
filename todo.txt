@@ -1,0 +1,5 @@
+/**
+ * Mission for version 3
+ */
+
+> add jquery sidebar

@@ -1,0 +1,19 @@
+.slicknav_menu {
+    display:none;
+    background: #000;
+}
+.slicknav_btn {
+    background-color: #000;
+    display: block;
+    width: 100%;
+}
+@media screen and (max-width: 778px) {
+    /* #menu is the original menu */
+    .js #menu {
+        display:none;
+    }
+    
+    .js .slicknav_menu {
+        display:block;
+    }
+}

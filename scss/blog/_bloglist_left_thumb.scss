@@ -1,0 +1,34 @@
+//blog/_bloglist_left_thumb.scss
+
+.blog-list-left-thumb{
+	.single-entry {
+	    margin: 10% 0;
+	}
+	.entry-title {
+		h2 {
+			margin: 0;
+		}
+	}
+	.single-entry:nth-child(1) {
+	    margin-top: 0;
+	}
+	.entry-feature-img{
+	    float: left;
+	    width: 35%;
+	}
+	.entry-content{
+	    overflow: hidden;
+	}
+	.entry-excerpt {
+	    padding-top: 0;
+	    padding-bottom: 0;
+	}
+	.entry-meta {
+	    border-top: 4px double #ddd;
+	    padding-top: 10px;
+	}
+
+}
+
+
+

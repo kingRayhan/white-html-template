@@ -1,0 +1,16 @@
+.blog-list-grid{}
+.blog-list-grid .entry-title{
+    font-size: 18px;
+}
+.blog-list-grid .entry-excerpt {
+    padding: 0;
+}
+.blog-list-grid.single-entry {
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+.meta-list{
+    font-size: 13px;
+}

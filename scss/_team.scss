@@ -1,0 +1,29 @@
+.team-area{
+	background-color: #FBEDDC;
+}
+.team-area .section-title {
+    padding-bottom: 45px;
+}
+
+.team-member{
+
+}
+#team-carousel {
+    padding: 35px 0;
+}
+.team-member-identy h2{
+	font-family: 'montserratblack';
+	position: relative;
+}
+.team-member-identy h2:after {
+    position: absolute;
+    content: ' ';
+    bottom: -13px;
+    left: 42.2%;
+    height: 4px;
+    width: 15%;
+    background-color: #000;
+}
+.team-member-identy h4{
+    font-family: 'montserrathairline';
+}

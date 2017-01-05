@@ -1,0 +1,27 @@
+.landing-area{
+
+}
+.landing-item-title {
+    position: relative;
+    margin: 3% 0;
+    line-height: 35px;
+}
+.landing-item-title:after {
+    position: absolute;
+    height: 5px;
+    width: 70px;
+    content: "";
+    bottom: -18px;
+    left: 0;
+    background: #000;
+}
+.landing-item-title h4 {
+    font-family: 'montserrathairline';
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.landing-item-title h2{
+	font-family: 'montserratblack';
+	font-size: 35px;
+	margin-top: 0;
+}

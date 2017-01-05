@@ -1,0 +1,30 @@
+body{
+	font-size: $fontsize-base;
+	line-height: $lineheight-base;
+	font-family: $font-base;
+	font-weight: 400;
+}
+
+
+
+h1 { font-size: 2.25em; }
+h2 { font-size: 1.875em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.125em; }
+h5 { font-size: .875em; }
+h6 { font-size: .75em; }
+
+h1,h2,h3,h4{
+    font-family: $font-bold;
+    color: $primary-color;
+}
+input:focus{
+    outline: none;
+}
+blockquote {
+    border-left: 4px solid #ccc;
+    padding: 12px;
+    font-weight: bold;
+    color: #807D7D;
+    box-shadow: 10px 10px 20px #ddd;
+}
