@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
     Theme Name: White
     Description: A html template for blog and magazine.
@@ -159,9 +160,25 @@ img {
   text-decoration: none;
 }
 
+.border {
+  border: 1px solid #ddd;
+}
+
 /**
  * ================================================
- *  2. Header
+ *  2. Page style
+ * ================================================
+ */
+body.boxed-layout {
+  background-color: #ddd;
+}
+body .page-content > .electron-container {
+  background-color: #fff;
+}
+
+/**
+ * ================================================
+ *  3. Header
  * ================================================
  */
 header {
@@ -171,11 +188,16 @@ header {
   -webkit-box-shadow: 0px 10px 39px -8px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 39px -8px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 39px -8px rgba(0, 0, 0, 0.75);
+  background-color: #fff;
 }
 
 .header-wrapper {
   width: 95%;
   margin: auto;
+}
+
+.logo-wrapper {
+  padding: 22px 0;
 }
 
 .logo {
@@ -199,43 +221,202 @@ header {
 /**
  * Main menu
  */
-.mainmenu {
-  font-family: "montserrathairline";
-  transition: 500ms;
+/*
+- Name: megamenu.js - style.css
+- Version: 1.0
+- Latest update: 29.01.2016.
+- Author: Mario Loncarek
+- Author web site: http://marioloncarek.com
+*/
+/* ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô
+megamenu.js STYLE STARTS HERE
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
+.menu-mobile {
+  display: none;
+  padding: 20px;
 }
-.mainmenu ul {
-  margin: 0;
+.menu-mobile:after {
+  content: "\f394";
+  font-family: "Ionicons";
+  font-size: 2.5rem;
   padding: 0;
   float: right;
-  list-style: none;
-  z-index: 99999;
-}
-.mainmenu ul li {
-  float: left;
-  margin: 0 10px;
-}
-.mainmenu ul li a {
-  display: block;
-  color: #989898;
-  font-weight: bold;
-  font-size: 18px;
   position: relative;
-}
-.mainmenu ul li:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-.mainmenu ul li.active a {
-  color: #000;
-  font-weight: bold;
-}
-.mainmenu:after {
-  content: '';
-  display: block;
-  clear: both;
+  top: 50%;
+  transform: translateY(-25%);
 }
 
+.menu-dropdown-icon:before {
+  content: "\f489";
+  font-family: "Ionicons";
+  display: none;
+  cursor: pointer;
+  float: right;
+  padding: 1.5em 2em;
+  background: #fff;
+  color: #333;
+}
+
+.menu > ul {
+  margin: 0 auto;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.menu > ul:before, .menu > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul:after {
+  clear: both;
+}
+.menu > ul > li {
+  float: left;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+}
+.menu > ul > li a {
+  text-decoration: none;
+  padding: 1.5em 3em;
+  display: block;
+}
+.menu > ul > li:hover {
+  background: #eee;
+}
+.menu > ul > li > ul {
+  display: none;
+  width: 100%;
+  background: #eee;
+  padding: 20px;
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.menu > ul > li > ul:before, .menu > ul > li > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul > li > ul:after {
+  clear: both;
+}
+.menu > ul > li > ul > li {
+  margin: 0;
+  padding-bottom: 0;
+  list-style: none;
+  width: 25%;
+  background: none;
+  float: left;
+}
+.menu > ul > li > ul > li a {
+  color: #777;
+  padding: .2em 0;
+  width: 95%;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+.menu > ul > li > ul > li > ul {
+  display: block;
+  padding: 0;
+  margin: 10px 0 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.menu > ul > li > ul > li > ul:before, .menu > ul > li > ul > li > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul > li > ul > li > ul:after {
+  clear: both;
+}
+.menu > ul > li > ul > li > ul > li {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  margin: 0;
+  font-size: .8em;
+}
+.menu > ul > li > ul > li > ul > li a {
+  border: 0;
+}
+.menu > ul > li > ul.normal-sub {
+  width: 300px;
+  left: auto;
+  padding: 10px 20px;
+}
+.menu > ul > li > ul.normal-sub > li {
+  width: 100%;
+}
+.menu > ul > li > ul.normal-sub > li a {
+  border: 0;
+  padding: 1em 0;
+}
+
+/* ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô
+Mobile style's
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
+@media only screen and (max-width: 959px) {
+  .menu-container {
+    width: 100%;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .menu-dropdown-icon:before {
+    display: block;
+  }
+
+  .menu > ul {
+    display: none;
+  }
+  .menu > ul > li {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+  .menu > ul > li a {
+    padding: 1.5em;
+    width: 100%;
+    display: block;
+  }
+  .menu > ul > li > ul {
+    position: relative;
+  }
+  .menu > ul > li > ul.normal-sub {
+    width: 100%;
+  }
+  .menu > ul > li > ul > li {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .menu > ul > li > ul > li:first-child {
+    margin: 0;
+  }
+  .menu > ul > li > ul > li > ul {
+    position: relative;
+  }
+  .menu > ul > li > ul > li > ul > li {
+    float: none;
+  }
+  .menu .show-on-mobile {
+    display: block;
+  }
+}
 /**
  * Mobile menu
  */
@@ -391,10 +572,6 @@ header {
  *  7. Blog
  * ================================================
  */
-.page-content {
-  margin-top: 45px;
-}
-
 .breadcrumbs-wrapper {
   background: #000;
   color: #fff;
@@ -639,7 +816,7 @@ ul.child {
  * Blog List large
  */
 .blog-list-large img {
-  max-width: 100%;
+  width: 100%;
 }
 .blog-list-large .author-profile-pic {
   margin-top: -100px;
@@ -771,6 +948,7 @@ ul.child {
 .blog-list-left-thumb .entry-feature-img {
   float: left;
   width: 35%;
+  margin-right: 15px;
 }
 .blog-list-left-thumb .entry-content {
   overflow: hidden;
@@ -869,6 +1047,10 @@ footer .footer-top .widget-title {
 }
 footer .footer-top .widget-title h1, footer .footer-top .widget-title h2, footer .footer-top .widget-title h3, footer .footer-top .widget-title h4, footer .footer-top .widget-title h5, footer .footer-top .widget-title h6 {
   color: #fff;
+}
+footer .footer-copyright {
+  background-color: #fff;
+  padding: 5px;
 }
 footer .footer-copyright a {
   color: #000;

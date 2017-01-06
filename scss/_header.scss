@@ -5,11 +5,15 @@ header {
     -webkit-box-shadow: 0px 10px 39px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 10px 39px -8px rgba(0,0,0,0.75);
     box-shadow: 0px 10px 39px -8px rgba(0,0,0,0.75);
+    background-color: #fff;
 }
 
 .header-wrapper {
     width: 95%;
     margin: auto;
+}
+.logo-wrapper{
+  padding: 22px 0;
 }
 .logo{
     position: relative;
@@ -33,42 +37,45 @@ header {
 /**
  * Main menu
  */
-.mainmenu{
-	font-family: $font-mainmen;
-	transition: $transition;
-    ul{
-        margin: 0;
-        padding: 0;
-        float: right;
-        list-style: none;
-        z-index: 99999;
-        li{
-            float: left;
-            margin: 0 10px;
-            a{
-                display: block;
-                color: #989898;
-                font-weight: bold;
-                font-size: 18px;
-                position: relative;
-            }
-            &:after{
-                content: '';
-                display: block;
-                clear: both;
-            }
-            &.active{
-                a{
-                    color: #000;
-                    font-weight: bold;
-                }
-            }
-        }
-    }
-    &:after{
-        content: '';
-        display: block;
-        clear: both;
-    }
-}
 
+@import "../plugins/mega-menu/mega-menu";
+
+
+// .mainmenu{
+// 	font-family: $font-mainmen;
+// 	transition: $transition;
+//     ul{
+//         margin: 0;
+//         padding: 0;
+//         float: right;
+//         list-style: none;
+//         z-index: 99999;
+//         li{
+//             float: left;
+//             margin: 0 10px;
+//             a{
+//                 display: block;
+//                 color: #989898;
+//                 font-weight: bold;
+//                 font-size: 18px;
+//                 position: relative;
+//             }
+//             &:after{
+//                 content: '';
+//                 display: block;
+//                 clear: both;
+//             }
+//             &.active{
+//                 a{
+//                     color: #000;
+//                     font-weight: bold;
+//                 }
+//             }
+//         }
+//     }
+//     &:after{
+//         content: '';
+//         display: block;
+//         clear: both;
+//     }
+// }

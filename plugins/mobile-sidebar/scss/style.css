@@ -1,7 +1,7 @@
 /*
 Error: File to import not found or unreadable: bourbon.
-       Load path: C:/Users/King Rayhan/Dropbox/ElectronThemes/white-v3/plugins/mobile-sidebar/scss
-        on line 1 of C:\Users\King Rayhan\Dropbox\ElectronThemes\white-v3\plugins\mobile-sidebar\scss\style.scss
+       Load path: C:/Users/King Rayhan/Desktop/white-v2/plugins/mobile-sidebar/scss
+        on line 1 of C:\Users\King Rayhan\Desktop\white-v2\plugins\mobile-sidebar\scss\style.scss
 
 1: @import 'bourbon'; // http://bourbon.io/
 2: 
@@ -11,7 +11,7 @@ Error: File to import not found or unreadable: bourbon.
 6: 
 
 Backtrace:
-C:\Users\King Rayhan\Dropbox\ElectronThemes\white-v3\plugins\mobile-sidebar\scss\style.scss:1
+C:\Users\King Rayhan\Desktop\white-v2\plugins\mobile-sidebar\scss\style.scss:1
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -48,4 +48,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: bourbon.\A        Load path: C:/Users/King Rayhan/Dropbox/ElectronThemes/white-v3/plugins/mobile-sidebar/scss\A         on line 1 of C:\Users\King Rayhan\Dropbox\ElectronThemes\white-v3\plugins\mobile-sidebar\scss\style.scss\A \A 1: @import 'bourbon'; // http://bourbon.io/\A 2: \A 3: @import '../partials/variables'; // colors, fonts etc...\A 4: \A 5: @import '../partials/mixins'; // custom mixins\A 6: "; }
+  content: "Error: File to import not found or unreadable: bourbon.\A        Load path: C:/Users/King Rayhan/Desktop/white-v2/plugins/mobile-sidebar/scss\A         on line 1 of C:\Users\King Rayhan\Desktop\white-v2\plugins\mobile-sidebar\scss\style.scss\A \A 1: @import 'bourbon'; // http://bourbon.io/\A 2: \A 3: @import '../partials/variables'; // colors, fonts etc...\A 4: \A 5: @import '../partials/mixins'; // custom mixins\A 6: "; }

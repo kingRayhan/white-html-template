@@ -61,8 +61,13 @@ $link_color: $primary_color;
 $selection_color: $primary_hover_color;
 
 $footer_bg: #34495e;
+$footer_bottom_bg: #fff;
 $footer_text_color: #fff;
 $footer_link_color: #fff;
+
+
+$body_bg: #ddd;
+$page_content_bg: #fff;
 
 
 
@@ -72,4 +77,3 @@ $transition: 500ms;
 // config
 
 $widget-title-font: $font-playfair;
-

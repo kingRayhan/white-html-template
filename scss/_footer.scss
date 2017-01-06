@@ -14,11 +14,10 @@ footer{
 		}
 	}
 	.footer-copyright{
+		background-color: $footer_bottom_bg;
+		padding: 5px;
 		a{
 		    color: #000;
 		}
-	}
-	.footer-copyright{
-		
 	}
 }
